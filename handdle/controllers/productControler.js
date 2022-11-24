@@ -6,7 +6,7 @@ class ProductControler {
         try {
             res.render("products", { products: products, empty: products.length === 0 ? true : false })
         } catch (error) {
-            console.log("Error en getAll", error);
+            console.log("Error en obtener productos", error);
         }
     }
     addProduct(req, res) {
@@ -24,7 +24,7 @@ class ProductControler {
             console.log(products);
             res.redirect("/")
         } catch (error) {
-            console.log("Error en addProduct", error);
+            console.log("Error en agregar productos", error);
         }
     }
 }
